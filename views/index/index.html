@@ -1,0 +1,132 @@
+<!--
+@require "index.css"
+@require "index.js"
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>首页</title>
+    <meta content="descriptions" charset="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no" />
+    <script src="../../lib/js/require.js"></script>
+</head>
+<body>
+   <div class="main"  ms-controller="vm">
+       <!--banner轮播图-->
+       <div>
+           <div class="banner-wrap index-banner"><ul class="banner-ul"></ul></div>
+       </div>
+       <!--公告-->
+       <div class="weui_panel weui_panel_access">
+           <div class="weui_panel_bd" style="height: 60px;">
+               <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+                   <div class="weui_media_hd" id="weui_media_hd">
+                       <img class="weui_media_appmsg_thumb" src="../public-image/top-news.jpg" alt="">
+                   </div>
+                   <div id="scrollDiv">
+                       <div class="weui_media_bd" id="ad-marquree">
+                           <p class="weui_media_desc li">欢迎参与验证抽奖活动</p>
+                           <p class="weui_media_desc li">欢迎参与验证抽奖活动</p>
+                           <p class="weui_media_desc li">欢迎参与验证抽奖活动</p>
+                       </div>
+                   </div>
+
+               </a>
+           </div>
+       </div>
+       <!--菜单宫格-->
+       <div class="weui_grids" id="weui_grids">
+           <a href="javascript:;" class="weui_grid js_grid" data-id="button" ms-click="verifyBtn">
+               <div class="weui_grid_icon">
+                   <span class="icon-uniE907"></span>
+               </div>
+               <p class="weui_grid_label">
+                  防伪验证
+               </p>
+           </a>
+           <a href="javascript:;" class="weui_grid js_grid" data-id="cell" ms-click="prizeBtn">
+               <div class="weui_grid_icon">
+                   <span class="icon-uniE90A"></span>
+               </div>
+               <p class="weui_grid_label">
+                   互动抽奖
+               </p>
+           </a>
+           <a href="javascript:;" class="weui_grid js_grid" data-id="button" ms-click="proStartBtn">
+               <div class="weui_grid_icon">
+                   <span class="icon-prostart"></span>
+               </div>
+               <p class="weui_grid_label">
+                   产品溯源
+               </p>
+           </a>
+           <a href="javascript:;" class="weui_grid js_grid" data-id="cell" ms-click="checkBtn">
+               <div class="weui_grid_icon">
+                   <span class="icon-check"></span>
+               </div>
+               <p class="weui_grid_label">
+                   窜货查验
+               </p>
+           </a>
+           <a href="javascript:;" class="weui_grid js_grid" data-id="button" ms-click="memberCenterBtn">
+               <div class="weui_grid_icon">
+                   <span class="icon-uniE90B"></span>
+               </div>
+               <p class="weui_grid_label">
+                  会员中心
+               </p>
+           </a>
+           <a href="javascript:;" class="weui_grid js_grid" data-id="cell" ms-click="consultBtn">
+               <div class="weui_grid_icon">
+                   <span class="icon-uniE90D"></span>
+               </div>
+               <p class="weui_grid_label">
+                   资讯中心
+               </p>
+           </a>
+           <a href="javascript:;" class="weui_grid js_grid" data-id="button" ms-click="productBtn">
+               <div class="weui_grid_icon">
+                   <span class="icon-uniE906"></span>
+               </div>
+               <p class="weui_grid_label">
+                   产品中心
+               </p>
+           </a>
+           <a href="javascript:;" class="weui_grid js_grid" data-id="cell" ms-click="storeBtn">
+               <div class="weui_grid_icon">
+                   <span class="icon-uniE909"></span>
+               </div>
+               <p class="weui_grid_label">
+                   官方商城
+               </p>
+           </a>
+           <a href="javascript:;" class="weui_grid js_grid" data-id="button" ms-click="aboutUsBtn">
+               <div class="weui_grid_icon">
+                   <span class="icon-uniE908"></span>
+               </div>
+               <p class="weui_grid_label">
+                   关于我们
+               </p>
+           </a>
+           <a href="javascript:;" class="weui_grid js_grid" data-id="cell" ms-click="exchangeBtn">
+               <div class="weui_grid_icon">
+                   <span class="icon-uniE90C"></span>
+               </div>
+               <p class="weui_grid_label">
+                   积分换礼
+               </p>
+           </a>
+
+       </div>
+       <!--footer-->
+       <footer>
+           <p>技术服务支持：太和物联</p>
+       </footer>
+   </div>
+</body>
+</html>

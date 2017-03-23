@@ -1,0 +1,33 @@
+<!--
+@require "aboutUs.css"
+@require "aboutUs.js"
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>关于我们</title>
+    <meta name="apple-mobile-web-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no" />
+    <script src="../../lib/js/require.js"></script>
+    <style>
+        .banner-num{display: none}
+    </style>
+</head>
+<body>
+    <div class="main" ms-controller="vm">
+        <!--banner轮播图-->
+        <div class="banner-wrap index-banner"><ul class="banner-ul"></ul></div>
+        <div class="intro">
+            <h1>{{title}}</h1>
+            <p>{{info}}</p>
+        </div>
+        <div class="ewm">
+            <div><img ms-attr-src="barcodeImg" alt=""/></div>
+            <p>长按识别二维码关注微信公众号，了解更多服务与资讯</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+
+<!--
+@require "lottery.css"
+@require "lottery.js"
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>互动抽奖</title>
+    <meta content="descriptions" charset="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no" />
+    <script src="../../lib/js/require.js"></script>
+</head>
+<body style="position: relative">
+<div class="main" ms-controller="vm">
+       <div class="activity-notice">
+           <p>活动公告：参与抽奖前请先完成防伪验真！</p>
+       </div>
+       <div class="lottery">
+            <img src="lottery-bg.jpg"/>
+            <div class="dial">
+                <div class="dial-btn" id="dialBtn" ms-click="dialBtn"></div>
+            </div>
+           <a class="activity-rule-btn" ms-click="activeRule">活动规则</a>
+           <p class="prize-to"><img src="prize-to.png" alt=""/></p>
+       </div>
+       <div class="prize-list">
+            <div class="titles">
+                <h3>奖项</h3>
+                <h3>奖品名称</h3>
+                <h3>奖品图片</h3>
+                <h3>数量</h3>
+            </div>
+            <ul>
+                <li ms-repeat="array">
+                    <span>{{el.name}}</span>
+                    <span>{{el.prizeName}}</span>
+                    <span><img ms-attr-src="el.logoUrl"/></span>
+                    <span>{{el.amount}}</span>
+                </li>
+                <p class="loadMore" ms-if="array.length<1">暂无相关数据</p>
+                <p class="loadMore" ms-if="!isLastPage && array.length!=0"  ms-click="loadMore">点击加载更多</p>
+            </ul>
+       </div>
+
+</div>
+</body>
+</html>

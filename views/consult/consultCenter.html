@@ -1,0 +1,47 @@
+
+<!--
+@require "consultCenter.css"
+@require "consultCenter.js"
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>资讯中心</title>
+    <meta name="apple-mobile-web-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no" />
+    <script src="../../lib/js/require.js"></script>
+</head>
+<body>
+<div class="main" ms-controller="vm">
+    <!--banner轮播图-->
+    <div class="banner-wrap index-banner"><ul class="banner-ul"></ul></div>
+
+    <!--tab-->
+    <div class="weui_tab">
+        <div class="weui_navbar"  id="consult-tab">
+            <a class="weui_navbar_item" ms-repeat="array" ms-click="navTitle(el)">  <!--weui_bar_item_on  选中状态  -->
+               {{el.category.name}}
+            </a>
+        </div>
+        <div class="weui_tab_bd consult" style="padding-top: 28px;">
+            <div class="weui_tab_bd_item  weui_tab_bd_item_active">
+                    <div class="weui_cells weui_cells_access">
+                        <a ms-repeat="array2" class="weui_cell" ms-click="details(el)" >
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <h3>{{el.name}}</h3>
+                                <p>{{el.ctime|date('yyyy-MM-dd')}}</p>
+                            </div>
+                            <span class="weui_cell_ft"></span>
+                        </a>
+                    </div>
+                <p class="loadMore" ms-if="array2.length<1">暂无相关数据</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

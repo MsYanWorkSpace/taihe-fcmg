@@ -1,0 +1,42 @@
+
+<!--
+@require "product-category.css"
+@require "product-category.js"
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>产品中心</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no" />
+    <script src="../../lib/js/require.js"></script>
+    <style>
+        .weui_panel:after{border-bottom: none}
+    </style>
+</head>
+<body>
+<div class="main" ms-controller="vm">
+    <!--banner轮播图-->
+    <div class="banner-wrap index-banner"><ul class="banner-ul"></ul></div>
+    <div class="weui_panel weui_panel_access product-category-box">
+        <div class="weui_panel_bd" ms-repeat="array">
+            <a class="weui_media_box weui_media_appmsg product-category" ms-click="detail(el)">
+                <div class="weui_media_hd">
+                    <img class="weui_media_appmsg_thumb" ms-attr-src="el.images[0].path">
+                </div>
+                <div class="weui_media_bd">
+                    <h4 class="weui_media_title">{{el.category.name}}</h4>
+                    <!--<p class="weui_media_desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>-->
+                </div>
+            </a>
+        </div>
+        <a class="loadMore" ms-if="array.length<1">暂无相关数据</a>
+        <a class="loadMore" ms-if="!isLastPage && array.length!=0"  ms-click="loadMore">点击加载更多</a>
+    </div>
+</div>
+</body>
+</html>

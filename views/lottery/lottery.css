@@ -1,0 +1,217 @@
+.activity-notice{
+    width: 100%;
+    background: #7d1400;
+    height: 40px;
+    line-height: 40px;
+}
+.activity-notice p{
+    text-align: left;
+    color: #FFFFFF;
+    padding-left: 5px;
+}
+.lottery{
+    position: relative;
+}
+.lottery .dial{
+    position: absolute;
+    top: 125px;
+    left: 50%;
+    background: url("lottery.png") no-repeat center center;
+    background-size: 100% auto;
+    width: 280px;
+    height: 300px;
+    margin-left: -140px;
+}
+.dial .dial-btn{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -37px;
+    width: 70px;
+    height: 80px;
+    background: url("lottery-btn.png") no-repeat;
+    background-size: 100% auto;
+
+}
+.lottery .activity-rule-btn{
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    text-decoration: underline;
+    position: absolute;
+    top: 418px;
+    left: 50%;
+    margin-left: -32px;
+}
+
+.lottery .prize-to{
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    top: 445px;
+    left: 50%;
+    margin-left: -25px;
+}
+
+.prize-list{
+    padding: 10px 0;
+    font-size: 1.4rem;
+    background: #FFFFFF;
+}
+.prize-list .titles{
+    overflow: hidden;
+    border-bottom: 1px solid #dad8d9;
+}
+.prize-list .titles h3{
+    float: left;
+    font-size: 1.5rem;
+    width: 25%;
+    text-align: center;
+    font-weight: normal;
+    line-height: 2.5;
+}
+.prize-list ul{
+
+}
+.prize-list ul li{
+    border-bottom: 1px dashed #dad8d9;
+    overflow: hidden;
+    height: 58px;
+    line-height: 58px;
+}
+.prize-list ul li span{
+    display: block;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.prize-list ul li span>img{
+    width: 50px;
+    height: 50px;
+    margin: 2px auto 0;
+}
+
+#lotteryDialog .dialog-content,
+#lotteryDialog .dialog-footer{
+    background: none;
+}
+#lotteryDialog .dialog-wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -140px;
+    width: 280px;
+    /*margin-top: -160px;*/
+}
+#lotteryDialog .lotteryDialogBtn,#lotteryDialog  .linkToIndex{
+    background: #eb2a2d;
+    width: 194px;
+    margin-right: 0;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 2rem;
+    box-shadow: 0px 5px 0px #af1b1c;
+    border-radius: 8px;
+    padding: 5px 30px;
+}
+
+#lotteryDialog .dialog-content .prize-con{
+    position: relative;
+}
+.prize-con .prizeImg{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -55px;
+}
+.prize-con .prizeImg>img{
+    width: 85px;
+    height: 85px;
+    margin: 0 auto;
+}
+.prize-con .prizeImg>p{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.prize-con .prizeImg>p>strong{
+    text-align: center;
+}
+.prize-con .prizeImg>p>span{
+    color: #eb2a2d;
+}
+#lotteryDialog .tipTime{
+    color: #ffffff;
+    position: absolute;
+    bottom: -10px;
+    font-size: 1.2rem;
+    text-align: center;
+    left: 50%;
+    margin-left: -110px;
+}
+
+
+/*领奖结果页*/
+.ver-layout{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    display: -webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+}
+
+.lottery-result .resultImg{
+    width: 120px;
+    height: 120px;
+}
+.lottery-result .resultTip{
+    padding: 30px 0;
+    text-align: center;
+}
+
+
+/*//规则弹框*/
+#ruleDialog .dialog-content{
+    border-radius: 6px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    color: #646464;
+    padding: 10px;
+}
+#ruleDialog  .dialog-head{
+    color: #323232;
+    background: #f7d42f;
+}
+#ruleDialog  .dialog-close{
+ position: absolute;
+    top: 0;
+    right: 20px;
+    width: 30px;
+    height: 26px;
+}
+#ruleDialog  .dialog-close .close{
+    display: inline-block;
+    background: url("close.png") no-repeat;
+    background-size: 100% 100%;
+    width: 30px;
+    height: 26px;
+}
+#ruleDialog .dialog-footer{
+    padding: 10px;
+}
+#ruleDialog .sure{
+    color: #FFFFFF;
+    background: #06c1ae;
+    padding: 6px 30px;
+}
+#ruleDialog .dialog-footer button:first-child{
+    margin-right: 0;
+}

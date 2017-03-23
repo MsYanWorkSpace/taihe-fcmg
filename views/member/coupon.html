@@ -1,0 +1,55 @@
+
+<!--
+@require "memberCenter.css"
+@require "coupon.js"
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>我的优惠券</title>
+    <meta content="descriptions" charset="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no" />
+    <script src="../../lib/js/require.js"></script>
+</head>
+<body>
+<div class="main" ms-controller="vm">
+    <!--tab-->
+    <div class="weui_tab" id="weui_tab">
+        <div class="weui_navbar">
+            <a class="weui_navbar_item " ms-click="tab(1)" ms-class="weui_bar_item_on:useStatus">
+                可用券（{{useNum}}张）
+            </a>
+            <a class="weui_navbar_item" ms-click="tab(0)" ms-class="weui_bar_item_on:!useStatus">
+                不可用券<span ms-if="unuseNum!=''">（{{unuseNum}}张）</span>
+            </a>
+        </div>
+        <div class="weui_tab_bd">
+            <div class="weui_tab_bd_item  weui_tab_bd_item_active" ms-class-1="use:useStatus" ms-class-2="unuse:!useStatus" style="">
+                <ul>
+                    <li ms-repeat="array">
+                        <div class="left">
+                            <div>
+                                <h3>{{el.name}}</h3>
+                                <p>有效期至：{{el.expireTime}}</p>
+                            </div>
+                        </div>
+                        <div class="right">
+                           <p>{{useStatus?"点击":"已经"}}<br>使用</p>
+                        </div>
+                    </li>
+                </ul>
+                <p class="loadMore" ms-if="array.length<1">暂无相关数据</p>
+                <p class="loadMore" ms-if="!isLastPage && array.length!=0"  ms-click="loadMore">点击加载更多</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

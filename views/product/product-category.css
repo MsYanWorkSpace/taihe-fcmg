@@ -1,0 +1,5 @@
+.product-category-box{margin-left:20px;margin-right:20px; background: none;}
+.product-category.weui_media_box.weui_media_appmsg .weui_media_hd{width:90px;height:62px;background-color: #eee}
+.product-category{padding:5px;border:1px solid #ccc;}
+.product-category-box .weui_panel_bd + .weui_panel_bd{margin-top:10px;}
+.product-category-box .weui_panel_bd {background: #fff;}

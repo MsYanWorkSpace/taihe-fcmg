@@ -1,0 +1,33 @@
+<!--
+@require "memberCenter.css"
+@require "login.js"
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>登录</title>
+    <meta content="descriptions" charset="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no" />
+    <script src="../../lib/js/require.js"></script>
+    <link rel="stylesheet" href="memberCenter.css"/>
+</head>
+<body>
+<div class="main login"  ms-controller="vm">
+   <div class="phone">
+       <span class="icon-02"></span>
+       <div><input type="text" placeholder="手机号码" ms-duplex="phone" name="phone"/></div>
+   </div>
+    <div class="code">
+        <span class="icon-01"></span>
+        <div><input type="text" placeholder="短信验证码" ms-duplex="code" name="code"/></div>
+        <button class="weui_btn weui_btn_plain_primary get-code" id="get-code" ms-click="sendCode">发送短信验证码</button>
+    </div>
+    <a href="javascript:;" class="weui_btn weui_btn_primary" ms-click="loginBtn">登录</a>
+</div>
+</body>
+</html>

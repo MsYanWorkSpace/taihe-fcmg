@@ -1,0 +1,36 @@
+<!--
+@require "exchangeCenter.css"
+@require "exchangeResult.js"
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>兑换结果</title>
+    <meta name="apple-mobile-web-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no" />
+    <script src="../../lib/js/require.js"></script>
+</head>
+<body>
+<div class="main exchangeResult" ms-controller="vm">
+    <img ms-attr-src="proImg" style="margin: 0 auto" ms-if="result==1"/>
+    <img ms-attr-src="proImg" style="margin: 0 auto" ms-if="result==2"/>
+     <div class="exchangeMsg" ms-if="result==1">
+         <span>兑换成功</span><br/>
+         我们将会在24小时内充值到账！
+     </div>
+    <div class="exchangeMsg" ms-if="result==2">
+        <span>兑换成功</span><br/>
+        我们将会在3个工作日内发货！
+    </div>
+    <div class="weui-row">
+        <div class="weui-col-50"><a href="javascript:;" class="weui_btn weui_btn_primary" ms-click="exchangeBtn">返回商城</a></div>
+        <div class="weui-col-50"><a href="javascript:;" class="weui_btn weui_btn_primary" ms-click="indexBtn">返回首页</a></div>
+    </div>
+
+
+</div>
+</body>
+</html>

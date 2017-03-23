@@ -1,0 +1,186 @@
+#exchange-tab{
+ background: none;
+}
+#exchange-tab  a{
+    background: #FFFFFF;
+    font-size: 1.4rem;
+    color: #06c1ae;
+    border: 1px solid #06c1ae;
+}
+
+#exchange-tab .weui_navbar_item:after{
+    border-right: none;
+}
+#exchange-tab  a:first-child{
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    margin: 10px;
+    margin-right: 0;
+}
+#exchange-tab  a:last-child{
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin: 10px;
+    margin-left: 0;
+}
+#exchange-tab  a.weui_bar_item_on{
+    background: #06c1ae;
+    color: #FFFFFF;
+}
+#exchange-tab:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    border-bottom: none;
+}
+.userArea{
+    padding: 3px 0;
+    margin-top: 70px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background: #FFFFFF;
+}
+.userArea h1{
+    font-size: 2rem;
+    font-weight: normal;
+}
+.noLogin button,.usermsg button{
+    width: 80px;
+    height: 30px;
+    margin: 6px auto;
+    color: #FFFFFF;
+    background: #e8380d;
+    font-size: 1.2rem;
+}
+.usermsg h3{
+    font-size: 2rem;
+    font-weight: normal;
+    color: #333333;
+}
+.usermsg>div{
+    overflow: hidden;
+}
+.usermsg>div>p>span{
+    color: #06c1ae;
+}
+.usermsg>div>p,.usermsg>div>button{
+   display: inline-block;
+}
+.usermsg>div>button{
+    margin-left: 25px;
+}
+
+.exchangeCenter{
+
+}
+#exchangeCenter .weui_grid_icon{
+    /*border: 1px solid #06c1ae;*/
+    background: #FFFFFF;
+}
+#exchangeCenter .weui_grid_icon h5{
+    text-align: center;
+    font-size: 1.4rem;
+    color: #666666;
+    line-height: 2.3;
+    margin: 0 15px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.exchangeCenter .weui_grid_label{
+    background: #06c1ae;
+    color: #FFFFFF;
+    margin-top: 0;
+}
+
+.exchangeTelBill {
+    margin-top: 0;
+}
+.exchangeTelBill #member-cells  .weui_cell{
+  border-top: 0;
+}
+.exchangeTelBill .phone{
+    margin: 10px auto 20px;
+}
+
+.exchangeTelBill #member-cells .telName{
+    font-size: 1.8rem;
+    color: #06c1ae;
+}
+.exchangeTelBill #member-cells .point{
+    color: #06c1ae;
+}
+.exchangeTelBill #member-cells .point>span{
+    color: #e8380d;
+}
+.exchangeTelBill #member-cells .pointvalue>span{
+    color: #06c1ae;
+}
+.exchangeTelBill #member-cells .weui_cells:after{
+     border-bottom: 1px solid #dad8d9;
+}
+
+.exchangeTelBill #member-cells:before{
+    border-top: 1px solid #dad8d9;
+}
+
+.exchangeResult .exchangeMsg{
+     padding-top: 60px;
+     padding-bottom: 30px;
+     text-align: center;
+}
+.exchangeResult .exchangeMsg span{
+       font-size: 2rem;
+    color: #e8380d;
+}
+
+#address>div>span{
+    font-size: 1.4rem;
+}
+.address>div>div>input{
+    padding-left: 100px;
+}
+
+.addressQuery{
+    background: #FFFFFF;
+    padding: 10px;
+    border-top: 1px solid #dad8d9;
+    border-bottom: 1px solid #dad8d9;
+    overflow: hidden;
+    margin: 10px auto;
+}
+
+.addressQuery .updata .updateBtn{
+    width: 60px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #e8380d;
+    color: #e8380d;
+    font-size: 1.4rem;
+    float: right;
+}
+.addressQuery .updata p{
+    color:   #646464;
+    font-size: 1.4rem;
+    line-height: 1.8;
+}
+.addressQuery .updata div{
+    padding-top: 40px;
+}
+.addressQuery .updata p.firstP{
+    padding-top: 10px;
+    border-top: 1px dashed #dad8d9;
+}
+
+.addressQuery .create>button{
+    border: 1px solid #e8380d;
+    color: #e8380d;
+    height: 35px;
+    background: #FFFFFF;
+    width: 150px;
+    margin: 0 auto;
+    font-size: 1.4rem;
+}

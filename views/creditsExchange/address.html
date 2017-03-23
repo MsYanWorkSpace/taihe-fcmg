@@ -1,0 +1,35 @@
+<!--
+@require "exchangeCenter.css"
+@require "address.js"
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>收货地址</title>
+    <meta name="apple-mobile-web-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no" />
+    <script src="../../lib/js/require.js"></script>
+</head>
+<body>
+<div class="main login address" id="address" ms-controller="vm">
+    <div>
+        <span>收货人：</span>
+        <div><input type="text" ms-duplex="name" name="name" style="border-top: 1px solid #dad8d9;"/></div>
+    </div>
+    <div>
+        <span>联系电话：</span>
+        <div><input type="text" ms-duplex="phone" name="phone" /></div>
+    </div>
+    <div>
+        <span>详细地址：</span>
+        <div><input type="text" ms-duplex="ads" name="ads" /></div>
+    </div>
+
+     <a href="javascript:;" class="weui_btn weui_btn_primary" ms-click="sure">确认收货信息</a>
+
+</div>
+</body>
+</html>

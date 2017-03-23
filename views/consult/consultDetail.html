@@ -1,0 +1,23 @@
+
+<!--
+@require "consultCenter.css"
+@require "consultDetail.js"
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>详情</title>
+    <meta name="apple-mobile-web-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no" />
+    <script src="../../lib/js/require.js"></script>
+</head>
+<body>
+<div class="main consultdetail" ms-controller="vm">
+    <h1>{{title}}</h1>
+    <p style="text-indent: 2em;">{{info | html}}</p>
+</div>
+</body>
+</html>

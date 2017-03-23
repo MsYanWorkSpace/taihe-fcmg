@@ -1,0 +1,59 @@
+<!--
+@require "exchangeCenter.css"
+@require "exchangeCenter.js"
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>积分换礼</title>
+    <meta name="apple-mobile-web-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no" />
+    <script src="../../lib/js/require.js"></script>
+</head>
+<body>
+<div class="main" ms-controller="vm">
+    <div class="weui_navbar"  id="exchange-tab">
+        <a class="weui_navbar_item" ms-click="tab(1301)" ms-class="weui_bar_item_on:type==1301">  <!--weui_bar_item_on  选中状态  -->
+            实物礼品
+        </a>
+        <a class="weui_navbar_item" ms-click="tab(130301)" ms-class="weui_bar_item_on:type==130301">
+            话费
+        </a>
+    </div>
+
+    <div class="userArea">
+        <div class="noLogin" ms-if="!userToken || userToken=='' || userToken==null ">
+            <h1>未登录</h1>
+            <button class="btn" ms-click="login">点击登录</button>
+        </div>
+
+        <div class="usermsg"  ms-if="userToken">
+            <h3>{{phone}}</h3>
+            <div>
+                <p class="usermsg"><span class="icon-uniE90C" style="padding-right: 3px;"></span>我的积分：<span>{{pointValue}}</span></p>
+                <button class="btn" ms-click="toExchangeRecord">兑换记录</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="weui_tab_bd">
+        <div class="weui_tab_bd_item  weui_tab_bd_item_active">
+            <div class="weui_grids product-list exchangeCenter" id="exchangeCenter">
+                <a class="weui_grid js_grid" data-id="button" ms-repeat="array" ms-click="linkToExchange(el)">
+                    <div class="weui_grid_icon">
+                        <h5>{{el.name}}</h5>
+                        <img ms-attr-src="el.logoUrl">
+                    </div>
+                    <p class="weui_grid_label">{{el.pointValue}}积分</p>
+                </a>
+            </div>
+            <a class="loadMore" ms-if="array.length<1">暂无相关数据</a>
+            <a class="loadMore" ms-if="!isLastPage && array.length!=0"  ms-click="loadMore">点击加载更多</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

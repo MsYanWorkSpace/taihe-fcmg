@@ -1,0 +1,10 @@
+.title-intro{padding-left:10px;position:relative;font-size:1.6rem;line-height: 1.4}
+.title-intro:before{content:"";position:absolute;width:5px;height:100%;background-color:#06c1ae;left:0;border-radius: 2px;}
+.price{font-size:2.4rem;}
+.product-top{margin:10px}
+.share-box{display: block;border-left:1px solid #999;color:#999999}
+.share-a{padding:0 20px;color:#999;text-align: center;line-height: 14px;font-size:1.2rem}
+.share-a>i{font-size:3rem}
+.product-param{color:#646464}
+.product-title{font-size:1.6rem}
+.product-content{border-top:1px solid #ccc;padding:10px;}

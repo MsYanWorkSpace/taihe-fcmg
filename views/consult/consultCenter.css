@@ -1,0 +1,50 @@
+.consult{
+
+}
+
+.consult .weui_cell:before{
+    border-top: none;
+}
+
+.consult .weui_cells a{
+    border-bottom: 1px solid #d9d9d9;
+    margin-left: 10px;
+    padding: 15px;
+}
+.consult .weui_cells a:last-child{
+    border-bottom: none;
+}
+.consult .weui_cells a h3{
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: #646464;
+    padding-bottom: 5px;
+}
+.consult .weui_cells a p{
+    font-size: 1.4rem;
+    color: #999999;
+}
+
+#consult-tab  a{
+    background: #f8f8f8;
+    color: #646464;
+    font-size: 1.4rem;
+}
+#consult-tab .weui_navbar_item:after{
+    border-right: none;
+}
+
+#consult-tab  a.weui_bar_item_on{
+    border-bottom: 2px solid #06c1ae;
+}
+
+.consultdetail h1{
+    font-size: 2rem;
+    font-weight: normal;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 15px;
+}
+.consultdetail p{
+    padding: 15px;
+    line-height: 2;
+}

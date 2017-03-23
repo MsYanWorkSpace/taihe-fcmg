@@ -1,0 +1,49 @@
+<!--
+@require "exchangeCenter.css"
+@require "exchangeEntity.js"
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>兑换确认</title>
+    <meta name="apple-mobile-web-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no" />
+    <script src="../../lib/js/require.js"></script>
+</head>
+<body>
+<div class="main login exchangeTelBill" ms-controller="vm">
+    <img ms-attr-src="imgs" style="margin: 0 auto"/>
+
+    <div class="weui_cells" id="member-cells">
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p class="telName">{{names}}</p>
+                <p class="point">需用积分：<span>{{needPoint}}</span></p>
+            </div>
+            <div class="weui_cell_ft pointvalue">
+                当前可用积分：<span>{{pointValue}}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="addressQuery">
+        <div class="updata" ms-if="addressId">
+            <button class="btn updateBtn" ms-click="updateAds">修改</button>
+            <div>
+                <p class="firstP">收货人：{{consignee}}</p>
+                <p>联系电话：{{phone}}</p>
+                <p>收货地址：{{ads}}</p>
+            </div>
+        </div>
+        <div class="create" ms-if="!addressId">
+            <button class="btn" ms-click="createAds">去添加地址</button>
+        </div>
+    </div>
+
+    <a href="javascript:;" class="weui_btn weui_btn_primary" ms-click="exchangeBtn">确认</a>
+</div>
+</body>
+</html>

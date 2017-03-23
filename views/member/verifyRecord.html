@@ -1,0 +1,54 @@
+
+<!--
+@require "memberCenter.css"
+@require "verifyRecord.js"
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>验证记录</title>
+    <meta content="descriptions" charset="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no" />
+    <script src="../../lib/js/require.js"></script>
+</head>
+<body>
+<div class="main" ms-controller="vm">
+    <div class="member-header">
+        <p>扫码次数：{{scannum}}&nbsp;&nbsp;|&nbsp;&nbsp;验证次数：{{total}}</p>
+    </div>
+    <div class="member-title">
+        <p style="background:#74b947;"> <span class="icon-uniE903"></span></p>
+        <h3>记录明细</h3>
+    </div>
+    <div class="weui_cells" id="member-cells">
+        <div class="weui_cell" id="first-child">
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>产品名称</p>
+            </div>
+            <div class="weui_cell_ft">
+                验证时间
+            </div>
+        </div>
+
+            <div class="weui_cell" ms-repeat="array">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>{{el.name}}</p>
+                </div>
+                <div class="weui_cell_ft">
+                   {{el.ctime | date('yyyy-MM-dd HH:mm:ss')}}
+                </div>
+            </div>
+
+    </div>
+    <p class="loadMore" ms-if="array.length<1">暂无相关数据</p>
+    <p class="loadMore" ms-if="!isLastPage && array.length!=0"  ms-click="loadMore">点击加载更多</p>
+
+</div>
+</body>
+</html>

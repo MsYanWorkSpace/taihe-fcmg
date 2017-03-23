@@ -1,0 +1,41 @@
+.loading-img{
+    padding-bottom: 45px;
+    width: 90%;
+    margin: 0 auto;
+}
+.loading-img .car{
+    width: 35px;
+    -webkit-transition:all 1s linear;
+}
+.loading-img>div{
+    position: relative;
+    margin-right: 35px;
+}
+.loading-txt{
+    position: relative;
+    color: #00a584;
+    font-size: 2rem;
+    width: 140px;
+    margin: 0 auto;
+}
+.loading-txt>div{
+    height: 23px;
+    width: 50px;
+    position: absolute;
+    text-align: center;
+    top: 5px;
+    left: 80px;
+    overflow: hidden;
+    line-height: 1.2;
+}
+.loading-txt>div>p{
+    -webkit-transition: width 1s ease;
+    width: 50px;
+    text-align: left;
+    margin-top: -23px;
+}
+.loading-txt>div>p>span{
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+}

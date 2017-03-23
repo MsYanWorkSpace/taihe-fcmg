@@ -1,0 +1,41 @@
+
+<!--
+@require "product-details.css"
+@require "product-details.js"
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>产品详情</title>
+    <meta name="apple-mobile-web-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no" />
+    <script src="../../lib/js/require.js"></script>
+</head>
+<body>
+<div class="main" ms-controller="vm">
+    <!--banner轮播图-->
+    <div class="banner-wrap index-banner"><ul class="banner-ul"></ul></div>
+    <div class="product-top">
+        <div class="dis-box">
+            <div class="dis-col1">
+                <h1 class="product-title">{{name}}</h1>
+                <div class="red">￥ <span class="price">{{price}}</span></div>
+            </div>
+            <!--<div>
+                <span class="share-box"><a class="share-a"><i class="icon-uniE905"></i><br>分享</a></span>
+            </div>-->
+        </div>
+        <div class="product-param">
+           <p ms-repeat="array">{{el.prosetName}}：{{el.prosetValue}}</p>
+        </div>
+    </div>
+    <div class="product-content">
+        <h2 class="title-intro">产品介绍</h2>
+         <div style="text-indent: 2em;">{{comment | html}}</div>
+    </div>
+</div>
+</body>
+</html>

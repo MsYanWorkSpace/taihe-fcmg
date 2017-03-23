@@ -1,0 +1,26 @@
+#weui_media_hd{ height: auto;width: 85px; border-right: 1px solid #999;     padding-right: 10px; }
+#weui_grids{margin: 10px auto; margin-bottom: 0; background: #FFFFFF }
+#weui_grids a{ width: 50%; text-align: center  }
+#weui_grids a>div,#weui_grids a>p{ display: inline-block }
+#weui_grids a>div{ vertical-align: top }
+footer{ background: #f8f8f8; text-align: center; font-size: 1.3rem; height: 35px; }
+footer p{ line-height: 35px; }
+.weui_media_box .weui_media_desc{ display: block }
+
+#weui_grids  span{ font-size: 3rem;  }
+#weui_grids  .weui_grid{padding: 25px 10px;}
+#weui_grids .weui_grid_label{ padding-left: 10px; }
+#weui_grids>a:nth-child(1) span{ color: #69b338; }
+#weui_grids>a:nth-child(2) span{ color: #980de8; }
+#weui_grids>a:nth-child(3) span{ color: #f36d18; }
+#weui_grids>a:nth-child(4) span{ color: #2db8f2; }
+#weui_grids>a:nth-child(5) span{ color: #f2af2d; }
+#weui_grids>a:nth-child(6) span{ color: #e4573c; }
+#weui_grids>a:nth-child(7) span{ color: #2db8f2; }
+#weui_grids>a:nth-child(8) span{ color: #e8e00d; }
+#weui_grids>a:nth-child(9) span{ color: #69b338; }
+#weui_grids>a:nth-child(10) span{ color: #272636; }
+
+#scrollDiv{   overflow: hidden; height: 30px;  /*line-height: 30px; width: 100px; white-space:nowrap;text-overflow:ellipsis;*/ }
+#scrollDiv .li{ height: 30px; line-height: 2.4 ; }
+

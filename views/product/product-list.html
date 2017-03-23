@@ -1,0 +1,31 @@
+
+<!--
+@require "product-list.css"
+@require "product-list.js"
+-->
+
+<!DOCTYPE html>
+<html ms-controller="vm">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="apple-mobile-web-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no" />
+    <script src="../../lib/js/require.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="weui_grids product-list">
+        <a class="weui_grid js_grid" data-id="button" ms-repeat="array" ms-click="detail(el)">
+            <div class="weui_grid_icon">
+                <img ms-attr-src="el.images[0].path" alt="" ms-if="el.images[0]">
+            </div>
+            <p class="weui_grid_label">{{el.name}}</p>
+        </a>
+    </div>
+    <a class="loadMore" ms-if="array.length<1">暂无相关数据</a>
+    <a class="loadMore" ms-if="!isLastPage && array.length!=0"  ms-click="loadMore">点击加载更多</a>
+</div>
+</body>
+</html>

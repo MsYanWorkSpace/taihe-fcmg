@@ -1,0 +1,120 @@
+
+<!--
+@require "memberCenter.css"
+@require "memberCenter.js"
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>会员中心</title>
+    <meta content="descriptions" charset="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no" />
+    <script src="../../lib/js/require.js"></script>
+
+</head>
+<body>
+<div class="main" ms-controller="vm">
+    <div class="member-header">
+        <p>亲爱的{{phone}}会员<br>欢迎回来!</p>
+    </div>
+    <!--公告-->
+    <div class="weui_panel weui_panel_access">
+        <div class="weui_panel_bd" style="height: 60px;">
+            <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+                <div class="weui_media_hd" id="weui_media_hd">
+                    <img class="weui_media_appmsg_thumb" src="../public-image/top-news.jpg" alt="">
+                </div>
+                <div id="scrollDiv">
+                    <div class="weui_media_bd" id="ad-marquree">
+                        <p class="weui_media_desc li">欢迎参与验证抽奖活动</p>
+                        <p class="weui_media_desc li">欢迎参与验证抽奖活动</p>
+                        <p class="weui_media_desc li">欢迎参与验证抽奖活动</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!--列表-->
+    <div class="weui_panel member-list">
+        <div class="weui_panel_bd">
+            <div class="weui_media_box weui_media_small_appmsg">
+                <div class="weui_cells weui_cells_access">
+                    <a class="weui_cell" href="javascript:;" style=" border-top: 1px solid #ededed;" ms-click="userPoint">
+                        <div class="weui_cell_hd">
+                            <span class="icon-uniE901"></span>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>积分明细</p>
+                        </div>
+                        <span class="weui_cell_ft"></span>
+                    </a>
+                </div>
+                <div class="weui_cells weui_cells_access">
+                    <a class="weui_cell" href="javascript:;" ms-click="coupon">
+                        <div class="weui_cell_hd">
+                            <span class="icon-uniE902"></span>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>我的优惠券</p>
+                        </div>
+                        <span class="weui_cell_ft"></span>
+                    </a>
+                </div>
+                <div class="weui_cells weui_cells_access">
+                    <a class="weui_cell" href="javascript:;" ms-click="prizeRecord">
+                        <div class="weui_cell_hd">
+                            <span class="icon-uniE904"></span>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>中奖记录</p>
+                        </div>
+                        <span class="weui_cell_ft"></span>
+                    </a>
+                </div>
+                <div class="weui_cells weui_cells_access">
+                    <a class="weui_cell" href="javascript:;" ms-click="exchangeRecord">
+                        <div class="weui_cell_hd">
+                            <span class="icon-uniE900"></span>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>兑换记录</p>
+                        </div>
+                        <span class="weui_cell_ft"></span>
+                    </a>
+                </div>
+                <div class="weui_cells weui_cells_access">
+                    <a class="weui_cell" href="javascript:;" ms-click="verifyRecord">
+                        <div class="weui_cell_hd">
+                            <span class="icon-uniE903"></span>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>验证记录</p>
+                        </div>
+                        <span class="weui_cell_ft"></span>
+                    </a>
+                </div>
+                <div class="weui_cells weui_cells_access">
+                    <a class="weui_cell" href="javascript:;" ms-click="personalData">
+                        <div class="weui_cell_hd">
+                            <span class="icon-uniE916"></span>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>个人资料</p>
+                        </div>
+                        <span class="weui_cell_ft"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="javascript:;" class="weui_btn weui_btn_primary" ms-click="linkToIndex">返回首页</a>
+    <a href="javascript:;" class="weui_btn" style="border: 1px solid #06c1ae; color: #06c1ae; background: #FFFFFF" ms-click="loginOutBtn">退出登录</a>
+</div>
+</body>
+</html>

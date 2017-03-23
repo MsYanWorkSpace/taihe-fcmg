@@ -1,0 +1,31 @@
+
+<!--
+@require "lottery.css"
+@require "lotteryResult.js"
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>领奖结果</title>
+    <meta content="descriptions" charset="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no" />
+    <script src="../../lib/js/require.js"></script>
+</head>
+<body>
+<div class="main" ms-controller="vm">
+       <div class="lottery-result ver-layout">
+           <div class="resultImg"><img src="lot-result.png"/> </div>
+           <div class="resultTip">
+               <p>领取成功！</p>
+               <p ms-if="resultCode == 101">我们会在24小时内给您电话充值</p>
+           </div>
+           <a href="javascript:;" class="weui_btn weui_btn_primary" ms-click="linkToIndex">返回首页</a>
+       </div>
+</div>
+</body>
+</html>

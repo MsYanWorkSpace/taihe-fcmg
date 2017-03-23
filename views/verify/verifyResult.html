@@ -1,0 +1,46 @@
+
+<!--
+@require "verify.css"
+@require "verifyResult.js"
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>验证结果</title>
+    <meta content="descriptions" charset="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no" />
+    <script src="../../lib/js/require.js"></script>
+    <style>
+        .banner-num{display: none}
+    </style>
+</head>
+<body>
+<div class="main" ms-controller="vm">
+    <!--banner轮播图-->
+    <div class="banner-wrap index-banner"><ul class="banner-ul"></ul></div>
+    <div class="verify-result">
+        <p class="ver-succ" ms-if="resultCode==1">
+            验证通过！<br>支持正品，共同参与。<br>
+            本次验证时间：{{nowtime}}<br>
+            首次验证时间：{{ctime}}
+        </p>
+        <p class="ver-succ" ms-if="resultCode==2">
+            该码已被查验！此次为第{{countNum}}次扫码 <br>
+            验证时间：{{ctime}}
+        </p>
+        <div ms-if="resultCode==2 && countNum>20" style="font-size: 1.2rem; color: #646464; text-align: left ;padding: 0 15px 10px;">
+            温馨提示:<br>
+            购买产品后，输入产品验证码可进行真伪查验。<br>
+            若该码已提前被他人查验。请注意,可能为假冒产品！<br>
+            支持正品，需要您的参与。<br/>如对产品存在疑问，请尽快与商家联系。
+        </div>
+        <a href="javascript:;" class="weui_btn weui_btn_primary inIndex"  ms-click="linkTo">{{referer==1?"返回抽奖" : "返回首页"}}</a>
+    </div>
+</div>
+</body>
+</html>

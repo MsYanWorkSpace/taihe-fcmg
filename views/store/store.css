@@ -1,0 +1,9 @@
+.storeUl{
+
+}
+.storeUl li{
+    margin: 15px;
+}
+.storeUl li img{
+    border-radius: 6px;
+}

@@ -1,0 +1,40 @@
+
+<!--
+@require "verify.css"
+@require "verify.js"
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>验证防伪</title>
+    <meta content="descriptions" charset="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no" />
+    <script src="../../lib/js/require.js"></script>
+    <style>
+        .banner-num{display: none}
+    </style>
+</head>
+<body>
+<div class="main" ms-controller="vm">
+    <!--banner轮播图-->
+    <div class="banner-wrap index-banner"><ul class="banner-ul"></ul></div>
+    <div class="verify-input">
+        <span class="icon-uniE917"></span>
+        <div>
+            <input type="text" placeholder="请输入验证码查验是否为正品" name="code" ms-duplex="code"/>
+            <div class="verfiy-tip">
+                <p>验证失败，请确定产品验证码是否正确！</p>
+                如对产品存在疑问，请尽快与商家联系。<br>
+                支持正品，维护权益，需要我们共同参与。
+            </div>
+        </div>
+        <a href="javascript:;" class="weui_btn weui_btn_primary" ms-click="sure">确定</a>
+    </div>
+</div>
+</body>
+</html>

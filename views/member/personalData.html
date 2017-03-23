@@ -1,0 +1,63 @@
+
+<!--
+@require "memberCenter.css"
+@require "personalData.js"
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>个人资料</title>
+    <meta content="descriptions" charset="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no" />
+    <script src="../../lib/js/require.js"></script>
+</head>
+<body>
+<div class="main" ms-controller="vm">
+    <div class="member-header">
+        <p>完备的个人资料,<br>有助于我们更好的开展服务哦！</p>
+    </div>
+
+    <!--列表-->
+    <div class="weui_panel" id="personalData">
+        <div class="weui_panel_bd">
+            <div class="weui_media_box weui_media_small_appmsg">
+                <div class="weui_cells weui_cells_access">
+                    <a class="weui_cell" href="javascript:;" style=" border-top: 1px solid #ededed;">
+                        <div class="weui_cell_hd"><span class="icon-07"></span></div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input type="text" placeholder="姓名" ms-duplex="username" name="username" />
+                        </div>
+                    </a>
+                    <a class="weui_cell" href="javascript:;">
+                        <div class="weui_cell_hd"><span class="icon-06"></span></div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" id="sex" type="text" value="" placeholder="性别" ms-duplex="sex" name="sex">
+                        </div>
+                        <span class="weui_cell_ft"></span>
+                    </a>
+                    <a class="weui_cell" href="javascript:;">
+                        <div class="weui_cell_hd"><span class="icon-04"></span></div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input bri"  type="date" value="" placeholder="生日" ms-duplex="brithday" name="brithday"/>
+                        </div>
+                        <span class="weui_cell_ft"></span>
+                    </a>
+                    <a class="weui_cell" href="javascript:;">
+                        <div class="weui_cell_hd"><span class="icon-03"></span></div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input  id="email" type="text" value="" placeholder="邮箱" ms-duplex="email" name="email">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="javascript:;" class="weui_btn weui_btn_primary" ms-click="sure">保存</a>
+</div>
+</body>
+</html>
